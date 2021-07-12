@@ -2,7 +2,7 @@
   Wilbot is a private discord bot. You can show your love to Wilson and hug him or show how musch you hate him by punching him. 
 
 ## Why Wilbot?
-Hallucination Tape is a musician(you should check him link) and he made a album called Wilson. Wilson is character that he created for the album and Wilson is a volleyball with a face. And I was bored and decied to make a Wilson bot.  
+Hallucination Tape is a musician(you should check him https://hallucinationtape.bandcamp.com/) and he made a album called Wilson. Wilson is character that he created for the album and Wilson is a volleyball with a face. And I was bored and decied to make a Wilson bot.  
 
 ## Commands 
 !register - add a user to the database   
@@ -11,3 +11,5 @@ Hallucination Tape is a musician(you should check him link) and he made a album 
 !punch - punch Wilson  
 !list - shows the list of all users and their stats (only those who have a special role)  
 !roles - check if you can get any role based on your stats
+
+#### Join the Hallucination Taoe server: https://discord.gg/N99zX6yPQS
