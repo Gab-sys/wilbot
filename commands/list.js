@@ -2,7 +2,7 @@ module.exports = {
     name: "list",
     description: "Shows the list of all users in the database.",
     async execute(message, args, Users){
-        if(message.member.roles.cache.has("847552231288602664"))
+        if(message.member.roles.cache.has("769646127355002911") || message.member.roles.cache.has("769519611141423114"))
         {
             //getting all users in the database
             const UserList = await Users.findAll({ });
