@@ -13,7 +13,7 @@ module.exports = {
     }
 }
 function CheckHug(message, hugs) {
-    if(hugs < 10){
+    if(hugs >= 10){
         message.member.roles.add("864241081986056252");
         message.channel.send("You have 10 or more hugs! Here, take this role.");
     }
@@ -43,7 +43,7 @@ function CheckHug(message, hugs) {
 }
 
 function CheckPunch(message, punches) {
-    if(punches < 10){
+    if(punches >= 10){
         message.member.roles.add("864241204535623750");
         message.channel.send("You have 10 or more punches! Here, take this role.");
     }
