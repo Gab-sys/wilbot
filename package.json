@@ -1,0 +1,16 @@
+{
+  "name": "wilson_hug_bot",
+  "version": "1.0.0",
+  "description": "Bot for hugging Wilson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bag",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2"
+  }
+}
