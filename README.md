@@ -12,4 +12,5 @@ Hallucination Tape is a musician(you should check him https://hallucinationtape.
 !list - shows the list of all users and their stats (only those who have a special role)  
 !roles - check if you can get any role based on your stats
 
-#### Join the Hallucination Tape server: https://discord.gg/N99zX6yPQS
+#### Join the Hallucination Tape server: https://discord.gg/N99zX6yPQS  
+This is open-source project.
