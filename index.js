@@ -3,6 +3,7 @@ const Sequelize = require('sequelize');
 const fs = require('fs');
 const client = new Discord.Client();
 
+
 //bot prefix
 const prefix = '!';
 client.commands = new Discord.Collection();
@@ -94,15 +95,11 @@ client.on('message', async message => {
     }
     else if(command === 'max' && args[0] === 'hugs')
     {
-        var maxHugs = await Users.max('hugs');
-        const user = await Users.findOne({ where: { hugs: maxHugs }});
-        message.channel.send('User with highest number of hugs is ' + '**' + user.username + '**' + ' with ' + maxHugs + ' hugs! :exploding_head: ');
+        client.commands.get('max_hugs').execute(message, args, Users);
     }
     else if(command === 'max' && args[0] === 'punches')
     {
-        var maxPunches = await Users.max('punches');
-        const user = await Users.findOne({ where: { punches: maxPunches }});
-        message.channel.send('User with highest number of punches is ' + '**' + user.username + '**' + ' with ' + maxPunches + ' punches! :exploding_head: ');
+        client.commands.get('max_punches').execute(message, args, Users);
     }
 });
 
