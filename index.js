@@ -46,7 +46,7 @@ const Users = sequelize.define('users', {
 
 client.once('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Party On Antarctica', { type: 'LISTENING' });
+    client.user.setActivity('Wilson', { type: 'LISTENING' });
     Users.sync();
 });
 
@@ -70,7 +70,7 @@ client.on('message', async message => {
         }
         catch (e) {
             if (e.name === 'SequelizeUniqueConstraintError') {
-                return message.reply('That tag already exists.');
+                return message.reply('That user already exists.');
             }
             return message.reply('Something went wrong with registering to a database.');
         }

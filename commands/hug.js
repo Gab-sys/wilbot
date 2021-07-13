@@ -11,6 +11,6 @@ module.exports = {
             await Users.update({ hugs: hugs}, { where: { user_id: message.author.id} });
             message.channel.send('You hugged Wilson.');
         }         
-        else return message.reply(`Could not find tag: ${message.author.name}. Please use !register to register to the database.`);
+        else return message.reply(`Could not find user: ${message.author.name}. Please use !register to register to the database.`);
     }
 }

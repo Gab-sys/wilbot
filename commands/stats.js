@@ -6,6 +6,6 @@ module.exports = {
         if (tag) {
             return message.channel.send('You hugged Wilson ' + tag.get('hugs') + ' times and punched Wilson ' + tag.get('punches') + ' times.');
         }
-        else return message.reply(`Could not find tag: ${message.author.name}. Please use !register to register to the database.`);
+        else return message.reply(`Could not find user: ${message.author.name}. Please use !register to register to the database.`);
     }
 }
