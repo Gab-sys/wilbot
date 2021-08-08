@@ -13,4 +13,6 @@ Hallucination Tape is a musician(you should check him https://hallucinationtape.
 !roles - check if you can get any role based on your stats
 !max hugs - shows the user with the highest number of hugs
 !max punches - shows the user with the highest number of punches
+This is open-source project.
+
 #### Join the Hallucination Tape server: https://discord.gg/N99zX6yPQS
