@@ -3,6 +3,7 @@ const Sequelize = require('sequelize');
 const fs = require('fs');
 const client = new Discord.Client();
 
+
 //bot prefix
 const prefix = '!';
 client.commands = new Discord.Collection();
@@ -92,7 +93,14 @@ client.on('message', async message => {
     {
         client.commands.get('roles').execute(message, args, Users);
     }
-
+    else if(command === 'max' && args[0] === 'hugs')
+    {
+        client.commands.get('max_hugs').execute(message, args, Users);
+    }
+    else if(command === 'max' && args[0] === 'punches')
+    {
+        client.commands.get('max_punches').execute(message, args, Users);
+    }
 });
 
 
