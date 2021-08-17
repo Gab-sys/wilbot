@@ -1,8 +1,19 @@
+//-------------------------------------------------------------
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+//-------------------------------------------------------------
+
 const Discord = require('discord.js');
 const Sequelize = require('sequelize');
 const fs = require('fs');
 const client = new Discord.Client();
-
+const talkedRecently = new Set();
+const talkedRecently2 = new Set();
 
 //bot prefix
 const prefix = '!';
@@ -47,7 +58,7 @@ const Users = sequelize.define('users', {
 
 client.once('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Wilson', { type: 'LISTENING' });
+    client.user.setActivity('Dinosaurs from outer space', { type: 'LISTENING' });
     Users.sync();
 });
 
@@ -80,10 +91,10 @@ client.on('message', async message => {
         client.commands.get('stats').execute(message, args, Users);
     }
     else if(command === 'hug'){
-        client.commands.get('hug').execute(message, args, Users);
+        client.commands.get('hug').execute(message, args, Users, talkedRecently);
     }
     else if(command === 'punch'){
-        client.commands.get('punch').execute(message, args, Users);
+        client.commands.get('punch').execute(message, args, Users, talkedRecently2);
     }
     else if(command === 'list')
     {

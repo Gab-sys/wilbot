@@ -13,57 +13,57 @@ module.exports = {
     }
 }
 function CheckHug(message, hugs) {
-    if(hugs >= 10){
+    if(hugs >= 10 && !(message.member.roles.cache.has("864241081986056252"))){
         message.member.roles.add("864241081986056252");
         message.channel.send("You have 10 or more hugs! Here, take this role.");
     }
-    else if(hugs >= 100 && hugs < 1000){
+    else if(hugs >= 100 && hugs < 1000 && !(message.member.roles.cache.has("864240193028358184"))){
         message.member.roles.add("864240193028358184");
         message.channel.send("You have 100 or more hugs! Here, take this role.");
     }
-    else if(hugs >= 1000 && hugs < 10000){
+    else if(hugs >= 1000 && hugs < 10000 && !(message.member.roles.cache.has("864240359580368957"))){
         message.member.roles.add("864240359580368957");
         message.channel.send("You have 1000 or more hugs! Here, take this role.");
     }
-    else if(hugs >= 10000 && hugs < 100000){
+    else if(hugs >= 10000 && hugs < 100000 && !(message.member.roles.cache.has("864240492609667092"))){
         message.member.roles.add("864240492609667092");
         message.channel.send("You have 10 000 or more hugs! Here, take this role.");
     }
-    else if(hugs >= 100000 && hugs < 1000000){
+    else if(hugs >= 100000 && hugs < 1000000 && !(message.member.roles.cache.has("864240622633615380"))){
         message.member.roles.add("864240622633615380");
         message.channel.send("You have 100 000 or more hugs! Here, take this role.");
     }
-    else if(hugs >= 1000000){
+    else if(hugs >= 1000000 && !(message.member.roles.cache.has("864240837764448316"))){
         message.member.roles.add("864240837764448316");
         message.channel.send("You have 1 000 000 or more hugs! Here, take this role.");
     }
     else{
-        message.channel.send("You don't have enough hugs to get a punch role.");
+        message.channel.send("You don't have enough hugs to get a hug role.");
     }   
 }
 
 function CheckPunch(message, punches) {
-    if(punches >= 10){
+    if(punches >= 10 && !(message.member.roles.cache.has("864241204535623750"))){
         message.member.roles.add("864241204535623750");
         message.channel.send("You have 10 or more punches! Here, take this role.");
     }
-    else if(punches >= 100 && punches < 1000){
+    else if(punches >= 100 && punches < 1000 && !(message.member.roles.cache.has("864241326883209247"))){
         message.member.roles.add("864241326883209247");
         message.channel.send("You have 100 or more punches! Here, take this role.");
     }
-    else if(punches >= 1000 && punches < 10000){
+    else if(punches >= 1000 && punches < 10000 && !(message.member.roles.cache.has("864241443575693332"))){
         message.member.roles.add("864241443575693332");
         message.channel.send("You have 1000 or more punches! Here, take this role.");
     }
-    else if(punches >= 10000 && punches < 100000){
+    else if(punches >= 10000 && punches < 100000 && !(message.member.roles.cache.has("864241546844045333"))){
         message.member.roles.add("864241546844045333");
         message.channel.send("You have 10 000 or more punches! Here, take this role.");
     }
-    else if(punches >= 100000 && punches < 1000000){
+    else if(punches >= 100000 && punches < 1000000 && !(message.member.roles.cache.has("864241674725097523"))){
         message.member.roles.add("864241674725097523");
         message.channel.send("You have 100 000 or more punches! Here, take this role.");
     }
-    else if(punches >= 1000000){
+    else if(punches >= 1000000 && !(message.member.roles.cache.has("864241798997999626"))){
         message.member.roles.add("864241798997999626");
         message.channel.send("You have 1 000 000 or more punches! Here, take this role.");
     }
