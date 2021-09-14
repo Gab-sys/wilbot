@@ -10,9 +10,9 @@ Hallucination Tape is a musician(you should check him https://hallucinationtape.
 !hug - hug Wilson  
 !punch - punch Wilson  
 !list - shows the list of all users and their stats (only those who have a special role)  
-!roles - check if you can get any role based on your stats
-!max hugs - shows the user with the highest number of hugs
+!roles - check if you can get any role based on your stats  
+!max hugs - shows the user with the highest number of hugs  
 !max punches - shows the user with the highest number of punches
-This is open-source project.
+
 
 #### Join the Hallucination Tape server: https://discord.gg/N99zX6yPQS
